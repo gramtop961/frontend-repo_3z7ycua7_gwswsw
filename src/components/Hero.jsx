@@ -1,4 +1,5 @@
 import { MapPin, Star, Calendar } from "lucide-react";
+import Spline from "@splinetool/react-spline";
 
 export default function Hero() {
   return (
@@ -49,12 +50,11 @@ export default function Hero() {
 
           <div className="w-full md:w-1/2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5">
-              <img
-                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1600&auto=format&fit=crop"
-                alt="Misty hills and coffee estates of Coorg"
-                className="h-full w-full object-cover"
+              <Spline
+                scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode"
+                style={{ width: "100%", height: "100%" }}
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
             </div>
           </div>
         </div>
